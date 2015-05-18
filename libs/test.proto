@@ -1,0 +1,8 @@
+package NOVA_UI;
+
+message UiRequest {
+required string url = 1;
+required int32 type = 2;
+
+}
+

@@ -1,0 +1,35 @@
+[{
+  "NAME" : "6xxx",
+  "BASE" : ""
+  "OWNER" : "xuexiaojian01",
+  "DESC" : "实验",
+  "TYPE" : ""
+  "FLOW" : ""
+  "MODE" : ""
+  "FGPRINT" : ""
+  "LAYER" : ""
+
+  "CONDITIONS" : [
+    {
+      "ARGS" : [["u1467860", "1"], ["u1468018", "2"]
+                ["u1401248", "3"], ["u1401251", "4"],
+      "TYPE" : "IN", 
+      "CHECK" : ["NOVA_UI::UiRequest::req_type", "PackageX:messageX:fieldX"]
+    },
+    {
+      "ARGS" : 1,
+      "TYPE" : "EQ",
+      "CHECK" : ["Package1:message1:field1"]
+    },
+    {
+      "ARGS" : "xxx.txt",
+      "TYPE" : "IN",
+      "CHECK" : ["Package1:message1:field1"]
+    },
+  ],
+
+  "MODIFY" : {
+    "NOVA_UI::UiRequest::req_tpl" : "hello.html",
+    "NOVA_UI::UiRequest::is_participated_bidding" : "true"
+  }
+}]

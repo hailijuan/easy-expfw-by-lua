@@ -1,0 +1,12 @@
+package NOVA_UI;
+message UiReq
+{
+      required int32 wuliao_bitmap = 1;
+
+      optional string req_tpl = 2;
+
+      repeated string param2 = 3;
+
+};
+
+
